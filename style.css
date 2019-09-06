@@ -1,0 +1,26 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Arial", sans-serif;
+  flex-direction: column;
+}
+.timer {
+  display: flex;
+  margin: 0 auto 30px;
+}
+.value, .label {
+  display: block;
+  text-align: center;
+}
+.value {
+  font-size: 5rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+.field:not(:last-of-type) .value::after {
+  content: ":";
+  position: absolute;
+}
